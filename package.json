@@ -1,19 +1,19 @@
 {
-	"name": "com.scytheoce.externalconsolewindow",
-	"displayName":"ExternalConsoleWindow",
+	"name": "com.slushyrh.unityexternalconsole",
+	"displayName":"Unity External Console",
 	"version": "0.1.0",
 	"unity": "6000.3",
 	"unityRelease": "3f1",
-	"description": "Replace this with your own description of the package. \n\nFor best results, use this text to summarize: \n\u25AA What the package does \n\u25AA How it can benefit the user \n\nNote: Special formatting characters are supported, including line breaks ('\\n') and bullets ('\\u25AA').",
-	"dependencies": {
-		"com.unity.test-framework": "1.6.0"
-	},
+	"description": "",
 	"author": {
-		"name": "Lachlan Henderson",
-		"url": "http://www.example.com",
-		"email": "example@email.com"
+		"name": "SlushyRH",
+		"url": "https://www.slushyrh.dev",
+		"email": "contact@slushyrh.dev"
 	},
-	"changelogUrl": "https://example.com/changelog.html",
-	"documentationUrl": "https://example.com/",
-	"licensesUrl": "https://example.com/licensing.html"
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com:SlushyRH/Unity-External-Console.git"
+	},
+	"changelogUrl": "https://github.com/SlushyRH/Unity-External-Console/blob/main/CHANGELOG.md",
+	"licensesUrl": "https://github.com/SlushyRH/Unity-External-Console/blob/main/LICENSE"
 }
