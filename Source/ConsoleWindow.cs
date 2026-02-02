@@ -108,7 +108,7 @@ namespace SRH
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
         private static void Init()
         {
-#if UNITY_EDITOR || !UNITY_STANDALONE_WIN
+#if UNITY_EDITOR || !UNITY_STANDALONE_WIN || DISABLE_EXTERN_CMD
             return;
 #endif
             
@@ -164,19 +164,15 @@ namespace SRH
             _ccStackTraceTxtColour = GetClosestConsoleColour(Settings.StackTreeColour);
         }
 
-        // from https://stackoverflow.com/questions/1988833/converting-color-to-consolecolor
         private static ConsoleColor GetClosestConsoleColour(Color32 colour)
         {
-            // init
             ConsoleColor consoleColour = ConsoleColor.White;
             double smallestDist = double.MaxValue;
 
             foreach (var cc in _consoleColours)
             {
-                // calculate distance between colour and target colour
                 double distance = Math.Pow(cc.Value.r - colour.r, 2.0) + Math.Pow(cc.Value.g - colour.g, 2.0) + Math.Pow(cc.Value.b - colour.b, 2.0);
 
-                // check if distance is smaller than the current smallest distance
                 if (distance < smallestDist)
                 {
                     smallestDist = distance;
@@ -184,13 +180,14 @@ namespace SRH
                 }
             }
 
-            // return closest console colour
             return consoleColour;
         }
         
         private static bool IsBuildAllowed()
         {
-#if DEVELOPMENT_BUILD
+#if DISABLE_EXTERN_CMD
+            return false;
+#elif DEVELOPMENT_BUILD
             return Settings.TargetBuild.HasFlag(TargetBuild.DEVELOPMENT);
 #else
             return Settings.TargetBuild.HasFlag(TargetBuild.RELEASE);
@@ -199,7 +196,6 @@ namespace SRH
 
         internal static void Cleanup()
         {
-            // 1. Unsubscribe IMMEDIATELY to stop new logs from entering HandleLog
             Application.logMessageReceived -= HandleLog;
 
             lock (_lock) 
