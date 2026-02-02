@@ -10,7 +10,7 @@ namespace SRH.Editor
         private const string FOLDER_PATH = "Assets/Resources/";
         private const string RESOURCES_PATH = "SRH/External Console Window/";
         
-        [MenuItem("Tools/SRH/External Console Window Settings")]
+        [MenuItem("Tools/SRH/External Console Settings")]
         private static void ShowWindow()
         {
             GetWindow<ConsoleWindowSettingsEditor>("Console Window Settings");

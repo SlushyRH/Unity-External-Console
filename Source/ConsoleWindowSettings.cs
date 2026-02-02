@@ -11,8 +11,9 @@ namespace SRH
         [SerializeField] private string consoleWindowName = "Console Debugger";
         [SerializeField] private ConsoleWindow.TargetBuild targetBuild = ConsoleWindow.TargetBuild.DEVELOPMENT;
         [SerializeField] private ConsoleWindow.StackTraceVisibility stackTraceVisibility = ConsoleWindow.StackTraceVisibility.EXCEPTION;
-        [SerializeField] private bool includeLogType = false;
-        [SerializeField] private bool includeTimestamp = true;
+        [SerializeField] private bool includeLogType = true;
+        [SerializeField] private bool includeTimestamp = false;
+        [SerializeField] private ConsoleWindow.TimestampFormat timestampFormat = ConsoleWindow.TimestampFormat.TWENTY_FOUR_HOUR;
 
         [Header("Colours")]
         [SerializeField] private Color32 infoColour = Color.white;
@@ -83,6 +84,19 @@ namespace SRH
                     return;
 
                 includeTimestamp = value;
+                NotifySettingChange();
+            }
+        }
+
+        public ConsoleWindow.TimestampFormat TimestampFormat
+        {
+            get => timestampFormat;
+            set
+            {
+                if (timestampFormat == value)
+                    return;
+
+                timestampFormat = value;
                 NotifySettingChange();
             }
         }

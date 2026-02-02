@@ -27,6 +27,12 @@ namespace SRH
             ASSERT = 1 << 8,
         }
 
+        public enum TimestampFormat
+        {
+            TWENTY_FOUR_HOUR = 0,
+            TWELVE_HOUR = 1
+        }
+
         private const string RESOURCES_PATH = "SRH/External Console Window/";
 
         private static ConsoleColor _ccInfoTxtColour;
@@ -273,8 +279,9 @@ namespace SRH
                     break;
             }
 
+            string format = Settings.TimestampFormat == TimestampFormat.TWENTY_FOUR_HOUR ? "HH:mm:ss" : "hh:mm:ss tt";
             string logType = Settings.IncludeLogType ? $"[{type.ToString()}] " : string.Empty;
-            string timestamp = Settings.IncludeTimestamp ? $"[{DateTime.Now:HH:mm:ss}] " : string.Empty;
+            string timestamp = Settings.IncludeTimestamp ? $"[{DateTime.Now.ToString(format)}] " : string.Empty;
 
             lock (_lock)
             {
