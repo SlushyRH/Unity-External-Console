@@ -14,6 +14,18 @@
 		"type": "git",
 		"url": "https://github.com/SlushyRH/Unity-External-Console.git"
 	},
+	"keywords": [
+		"Logging",
+		"Console",
+		"External Console",
+		"Mono",
+		"IL2CPP",
+		"Window Console",
+		"CMD",
+		"Logs",
+		"Debugging",
+		"Debug"
+	],
 	"changelogUrl": "https://github.com/SlushyRH/Unity-External-Console/blob/main/CHANGELOG.md",
 	"licensesUrl": "https://github.com/SlushyRH/Unity-External-Console/blob/main/LICENSE"
 }
