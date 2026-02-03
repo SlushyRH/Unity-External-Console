@@ -1,9 +1,7 @@
 {
 	"name": "com.slushyrh.unityexternalconsole",
 	"displayName":"Unity External Console",
-	"version": "1.0.0",
-	"unity": "6000.3",
-	"unityRelease": "3f1",
+	"version": "2.0.0",
 	"description": "A lightweight external CMD console for Unity that mirrors the Debug Logging in real-time, featuring automatic injection and a settings menu. Perfect for off-screen debugging in multi-monitor environments.",
 	"author": {
 		"name": "SlushyRH",
