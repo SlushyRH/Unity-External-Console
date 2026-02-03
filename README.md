@@ -2,10 +2,10 @@
 A lightweight external CMD console for Unity that mirrors the `Debug` logging in real-time. It features automatic injection and
 a settings menu under `Tools/SRH/External Console Settings`. Perfect for off-screen debugging in multi-monitor environments.
 
-<img src="https://github.com/SlushyRH/Unity-External-Console/blob/main/readme/Showcase.gif" alt="External Console Showcase" align="center">
+<img src="https://github.com/SlushyRH/Unity-External-Console/blob/main/Documentation~/Showcase.gif" alt="External Console Showcase" align="center">
 
-[!WARNING]
-The console will only open in a Windows OS build. If it is not, then the console simply won't show, but your game will run as normal.
+> [!WARNING]
+> The console will only open in a Windows OS build. If it is not, then the console simply won't show, but your game will run as normal.
 
 # How To Use
 1. Install Unity External Console by adding package using Git URL:
@@ -14,12 +14,12 @@ https://github.com/SlushyRH/Unity-External-Console.git
 ```
 2. Done! You can optionally edit the settings at `Tools/SRH/External Console Settings`
 
-[!INFO]
-If at any point you want to disable the External Console window, you can either set the
-`Target Build` to NONE, or add `DISABLE_EXTERN_CMD` to the Scripting Define Symbols.
+> [!NOTE]
+> If at any point you want to disable the External Console window, you can either set the
+> `Target Build` to NONE, or add `DISABLE_EXTERN_CMD` to the Scripting Define Symbols.
 
 # Settings
-<img src="https://github.com/SlushyRH/Unity-External-Console/blob/main/readme/InspectorWindow.gif" alt="External Console Inspector Settings">
+<img src="https://github.com/SlushyRH/Unity-External-Console/blob/main/Documentation~/InspectorWindow.png" alt="External Console Inspector Settings">
 
 You can change the settings under `Tools/SRH/External Console Settings` in the Unity Editor, or by accessing the
 settings through `ConsoleWindow.Settings` during runtime.
