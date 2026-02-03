@@ -1,0 +1,18 @@
+{
+    "name": "SRH.ExternConsole.Editor",
+    "rootNamespace": "SRH.Editor",
+    "references": [
+        "GUID:bd1fbee487471444f96e03ffb96caaee"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
