@@ -1,6 +1,7 @@
 <h1 align="center">Unity External Console</h1>
 A lightweight external CMD console for Unity that mirrors the Debug Logging in real-time. It features automatic injection and
-a settings menu under **`**Tools/SRH/External Console Settings**. Perfect for off-screen debugging in multi-monitor environments.
+a settings menu under <b>Tools/SRH/External Console Settings</b>. Perfect for off-screen debugging in multi-monitor environments.
+<br/>
 
 <img src="https://github.com/SlushyRH/Unity-External-Console/blob/main/Documentation~/Showcase.gif" alt="External Console Showcase" align="center">
 
