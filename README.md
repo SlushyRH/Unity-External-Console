@@ -8,10 +8,9 @@ a settings menu under <b>Tools/SRH/External Console Settings</b>. Perfect for of
 > The console will only open in a Windows OS build. If it is not, then the console simply won't show, but your game will run as normal.
 
 # How To Use
-1. Install Unity External Console by adding package using Git URL:
-```
-https://github.com/SlushyRH/Unity-External-Console.git
-```
+1. Install Unity External Console by adding package:
+    1. via Git URL: `https://github.com/SlushyRH/Unity-External-Console.git`
+    2. via OpenUPM: `com.slushyrh.unityexternalconsole`
 2. Done! You can optionally edit the settings at `Tools/SRH/External Console Settings`
 
 > [!NOTE]
