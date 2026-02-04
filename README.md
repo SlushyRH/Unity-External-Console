@@ -9,8 +9,8 @@ a settings menu under <b>Tools/SRH/External Console Settings</b>. Perfect for of
 
 # How To Use
 1. Install Unity External Console by adding package:
-    a. via Git URL: `https://github.com/SlushyRH/Unity-External-Console.git`
-    b. via OpenUPM: `com.slushyrh.unityexternalconsole`
+    1. via Git URL: `https://github.com/SlushyRH/Unity-External-Console.git`
+    2. via OpenUPM: `com.slushyrh.unityexternalconsole`
 2. Done! You can optionally edit the settings at `Tools/SRH/External Console Settings`
 
 > [!NOTE]
